@@ -79,7 +79,7 @@ function buy() {
                     console.log("Item: " + res[i].product_name + "\n" +
                     "Total: $" + res[i].price * answer.quantity);
 
-                    var updateStock = res[i].stock_quantity - answer.quantity;
+                    var updateStock = (res[i].stock_quantity - answer.quantity);
                     var item = answer.item_id;
                     confirmPurchase(updateStock, item);
                 }
