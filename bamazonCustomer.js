@@ -88,7 +88,7 @@ function buy() {
     })
 };
 
-function confirmPurchase(updateStock, item) {
+function confirmPurchase() {
     inquirer.prompt([{
         type: "confirm",
         name: "confirmation",
@@ -97,9 +97,9 @@ function confirmPurchase(updateStock, item) {
     }]).then(function(userConfirm){
         if (userConfirm.confirmPurchase === true) {
             connection.query("UPDATE products SET ? WHERE ?", [{
-                stock_quantity: updateStock
+                stock_quantity: res[i].stock_quantity - answer.quantity
             }, {
-                item_id: item
+                item_id: answer.item_id
             }], function(err, res) {});
 
             console.log("Transaction completed. Thank you.");
