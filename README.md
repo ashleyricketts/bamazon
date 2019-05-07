@@ -11,6 +11,6 @@ Bamazon is a storefront. The app will take in orders from customers and deplete 
 
 ## Demo Images
 
-![Bamzon-Image-1](/images/bamazon1.png)
+![Bamazon-Image-1](images/bamazon1.png)
 
-![Bamazon-Image-2](/images/bamazon2.png)
+![Bamazon-Image-2](images/bamazon2.png)
